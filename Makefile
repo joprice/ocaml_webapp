@@ -15,7 +15,7 @@ deps: $(opam_file)
 
 fmt:
 	dune build @fmt --auto-promote
-	
+
 # Build and run the app
 run:
 	DATABASE_URL=$(db_uri) dune exec $(project_name)
@@ -41,3 +41,6 @@ $(opam_file): dune-project
 
 resolve:
 	nix-shell -A resolve ./default.nix
+
+nix-build:
+	nix-build -A ocaml_webapp

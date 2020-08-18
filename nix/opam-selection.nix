@@ -2150,16 +2150,16 @@ in
       };
       opamSrc = repoPath (repos.opam-repository.src) 
       {
-        hash = "sha256:07ih3xr5zmvixm2jlymzd4j21v6kz8rx5sxas0x9xi0lsykidb6b";
-        package = "packages/ppx_rapper/ppx_rapper.2.0.0";
+        hash = "sha256:1188l23yy563zia74dag9gdmyc2ihi6gm1klh35d5jbdhdv2g6d5";
+        package = "packages/ppx_rapper/ppx_rapper.1.2.0";
       };
       pname = "ppx_rapper";
       src = pkgs.fetchurl 
       {
-        sha256 = "1ijg852471hhihl7km58mkkkhnjnr21ihpfrxw1cn3jmv3scdd29";
-        url = "https://github.com/roddyyaga/ppx_rapper/archive/2.0.0.tar.gz";
+        sha256 = "0l6s8mq7dzi698182f114yp01isid5jmxbcmfvi4wphlv958kf6i";
+        url = "https://github.com/roddyyaga/ppx_rapper/archive/1.2.0.tar.gz";
       };
-      version = "2.0.0";
+      version = "1.2.0";
     };
     ppx_sexp_conv = 
     {
