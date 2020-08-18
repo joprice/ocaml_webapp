@@ -38,3 +38,6 @@ $(opam_file): dune-project
 	-git add $(opam_file)       # opam uses the state of master for it updates
 	-git commit $(opam_file) -m "Updating package dependencies"
 	opam install . --deps-only  # Install the new dependencies
+
+resolve:
+	nix-shell -A resolve ./default.nix
